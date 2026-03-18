@@ -6,14 +6,14 @@ import {
 // Personal Details
 export const PROFILE = {
     name: "Vinit Kumar Gupta",
-    role: "Full Stack Web & Android App Development | DSA",
+    role: "SOFTWARE ENGINEER | MACHINE LEARNING & DATA ENGINEERING | FULL STACK",
     email: "officialvinit1176@gmail.com",
     phone: "+919621030649",
     location: "India",
     education: {
         degree: "B.Tech Information Technology (Honors in Full Stack Development)",
         college: "KPR Institute of Engineering and Technology, Coimbatore",
-        cgpa: "8.49/10",
+        cgpa: "8.53/10",
         year: "2023-2027"
     }
 };
@@ -23,7 +23,7 @@ export const PLATFORMS = [
     {
         name: "LeetCode",
         subtext: "Problem Solving",
-        stat: "150+ Solved",
+        stat: "200+ Solved",
         url: "https://leetcode.com/u/Vinit_Gupta7/",
         icon: Code,
         color: "group-hover:text-orange-400",
@@ -70,20 +70,22 @@ export const PLATFORMS = [
 // Skills Matrix
 export const SKILLS = [
     { category: "Languages", items: ["Java", "Kotlin", "JavaScript", "C/C++", "Python"], icon: Code },
-    { category: "Web Dev", items: ["HTML", "CSS", "React.js", "Node.js", "Express", "Tailwind"], icon: Layout },
+    { category: "Web Dev", items: ["HTML", "CSS", "React.js", "Node.js", "Express"], icon: Layout },
+    { category: "Machine Learning", items: ["Python", "Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy"], icon: Code },
     { category: "Android", items: ["Kotlin", "Jetpack Compose", "Retrofit", "Coil"], icon: Smartphone },
     { category: "Databases", items: ["MongoDB", "MySQL", "Room", "Mongoose"], icon: Database },
-    { category: "DevOps/Cloud", items: ["AWS", "Google Cloud", "Render", "Vercel"], icon: Server },
+    { category: "DevOps/Cloud", items: ["AWS", "Render", "Vercel"], icon: Server },
     { category: "Core", items: ["DSA", "System Design", "API Handling", "Testing (Jest)"], icon: Layers },
 ];
 
 // Certifications & Achievements
 export const ACHIEVEMENTS = [
-    { title: "MongoDB Certified Associate Developer", issuer: "MongoDB", type: "Certification" },
-    { title: "AWS Academy Cloud Foundation Certificate", issuer: "AWS", type: "Certification" },
-    { title: "5 Star at Problem Solving", issuer: "HackerRank", type: "Achievement" },
-    { title: "100+ Problems Solved", issuer: "LeetCode", type: "Achievement" },
-    { title: "Problem Solving in C", issuer: "HackerRank", type: "Certification" }
+    { title: "MongoDB Certified Associate Developer", issuer: "MongoDB", type: "Certification", url: "https://drive.google.com/file/d/1FV11ERwVGcfB6pBqoNplZu1GNk_azoTi/view" },
+    { title: "AWS Academy Cloud Foundation Certificate", issuer: "AWS", type: "Certification", url: "https://drive.google.com/file/d/1zobdHmOzHmFCFdmYJVf6onaI4nJPy9N2/view" },
+    { title: "5 Star at Problem Solving", issuer: "HackerRank", type: "Achievement", url: "https://www.hackerrank.com/profile/23IT066_KPRIET" },
+    { title: "200+ Problems Solved", issuer: "LeetCode", type: "Achievement", url: "https://leetcode.com/u/Vinit_Gupta7/" },
+    { title: "SQL (Intermediate)", issuer: "HackerRank", type: "Certification", url: "https://www.hackerrank.com/certificates/02d1b6cfe77c" },
+    { title: "Problem Solving (Intermediate)", issuer: "HackerRank", type: "Certification", url: "https://www.hackerrank.com/certificates/c5b2611f6b83" }
 ];
 
 // Work Experience
@@ -140,5 +142,28 @@ export const PROJECTS = [
         ],
         tech: ["Node.js", "Express", "MongoDB", "REST API"],
         link: "https://github.com/Official-Vinit/zerodha"
-    }
+    },
+    {
+        title: "SmartCart - Customer Sugmentation System",
+        role: "Customer segmentation",
+        description: "A customer segmentation system using different algorithms in unsupervised learning",
+        points: [
+            "Developed an end- to end customer segmentation system using different algorithms in unsupervised learning",
+            "Implemented evaluations to check the correctness and anamoly detection",
+        ],
+        tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+        link: "https://github.com/Official-Vinit/SmartCart-Customer-Segmentation"
+    },
+    {
+        title: " PowerPlant Energy Prediction - ANN System",
+        role: "ANN model",
+        description: "A prediction system using ANN model",
+        points: [
+            "Architecture: Implemented a multi-layer ANN with ReLU activation and MSELoss to optimize performance.",
+            "Performance: Achieved a high R^2 Score of 0.93 on test data, effectively capturing non-linear relationships.",
+            "Optimization: Utilized the Adam optimizer and implemented a \"best model\" save/load checkpoint strategy."
+        ],
+        tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "PyTorch"],
+        link: "https://github.com/Official-Vinit/ANNRegression"
+    },
 ];
