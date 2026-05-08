@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 import { SKILLS, EXPERIENCE } from "../constants";
 
 const Experience = () => {
@@ -25,7 +26,25 @@ const Experience = () => {
                             </div>
                             <span className="text-slate-500 font-mono mt-2 md:mt-0">{exp.duration}</span>
                         </div>
-                        <p className="text-slate-400 mb-4 max-w-3xl">{exp.description}</p>
+                        <p className="text-slate-400 mb-5 max-w-3xl">{exp.description}</p>
+
+                        {exp.links?.length > 0 && (
+                            <div className="flex flex-wrap gap-3 mb-5">
+                                {exp.links.map((link) => (
+                                    <a
+                                        key={link.url}
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex items-center gap-2 rounded-md border border-slate-700 px-3 py-2 text-sm text-slate-300 hover:border-teal-500 hover:text-teal-400 transition-colors"
+                                    >
+                                        {link.label}
+                                        <ExternalLink size={14} />
+                                    </a>
+                                ))}
+                            </div>
+                        )}
+
                         <div className="flex gap-2 flex-wrap">
                             {exp.tech.map((t, i) => (
                                 <span key={i} className="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">

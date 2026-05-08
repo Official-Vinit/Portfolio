@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
 /* Custom Scrollbar for that 'Tech' feel */
 ::-webkit-scrollbar {
@@ -17,6 +17,15 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #2dd4bf;
+}
+
+.horizontal-project-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #2dd4bf #0f172a;
+}
+
+.horizontal-project-scroll::-webkit-scrollbar {
+  height: 8px;
 }
 
 html {
