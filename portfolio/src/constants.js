@@ -107,7 +107,7 @@ export const EXPERIENCE = [
         description: "Developed and deployed a full stack website for educational content sharing as per client's demand.",
         links: [
             { label: "User Site", url: "https://www.piyushdhara.com" },
-            { label: "Admin Site", url: "https://www.admin.piyushdhara.com" }
+            { label: "Admin Site", url: "https://admin.piyushdhara.com/" }
         ],
         tech: ["MERN Stack", "System Design", "Deployment"]
     }
