@@ -48,6 +48,7 @@ const Hero = () => {
                         <p className="text-sm text-slate-500 mt-1">
                             {PROFILE.education.college} • CGPA {PROFILE.education.cgpa} • {PROFILE.education.year}
                         </p>
+                        <p className="text-sm text-slate-500 mt-1">{PROFILE.education.additional}</p>
                     </div>
                 </div>
 

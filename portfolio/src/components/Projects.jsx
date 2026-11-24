@@ -87,8 +87,7 @@ const ProjectCard = ({ project }) => {
 };
 
 const Projects = () => {
-    const devProjects = PROJECTS.slice(0, 6);
-    const mlProjects = PROJECTS.slice(6);
+    const devProjects = PROJECTS;
     const renderScroller = (projects) => (
         <div className="-mx-8 px-8 overflow-x-auto pb-6 mb-20 horizontal-project-scroll">
             <div className="flex gap-6">
@@ -107,11 +106,6 @@ const Projects = () => {
 
             {renderScroller(devProjects)}
 
-            <h3 className="text-3xl font-bold text-slate-100 mb-12 border-l-4 border-teal-500 pl-4">
-                Machine Learning Projects
-            </h3>
-
-            {renderScroller(mlProjects)}
         </section>
     );
 };
